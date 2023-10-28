@@ -7,7 +7,8 @@ class User(models.Model):
     password= models.CharField(max_length=500)
 
 class Notas(models.Model):
-    nota1= models.CharField(max_length=100)
-    nota2= models.CharField(max_length=500)
-    nota3= models.CharField(max_length=500)
+    nota1= models.IntegerField(max_length=100, default=0)
+    nota2= models.IntegerField(max_length=500, default=0)
+    nota3= models.IntegerField(max_length=500, default=0)
+    defi= models.IntegerField(max_length=500, default=0)
 
